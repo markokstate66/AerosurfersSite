@@ -28,6 +28,7 @@
     <main>
         <section class="hero">
             <div class="container">
+                <img src="assets/logo.png" alt="The Aerosurfer Group LLC" class="hero-logo">
                 <h1>Helping Companies Bring Their Visions to Flight</h1>
                 <p class="hero-subtitle">Expert aerospace engineering leadership and consultancy with over 30 years of experience in aircraft design, development, and program execution.</p>
                 <div class="hero-cta">
@@ -219,8 +220,29 @@
             <div class="container">
                 <h2>Let's Discuss Your Program</h2>
                 <p class="section-subtitle">Whether you're launching a new aircraft program or need engineering leadership for an existing initiative, I'm here to help bring your vision to flight.</p>
-                <div class="contact-content">
-                    <a href="mailto:contact@aerosurfergroup.com" class="btn btn-primary btn-large">Get in Touch</a>
+                <div class="contact-form-wrapper">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                        <div id="form-status" class="form-status"></div>
+                    </form>
                     <p class="location">Based in South Carolina, United States</p>
                 </div>
             </div>

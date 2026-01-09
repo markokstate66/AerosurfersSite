@@ -1,0 +1,12 @@
+{
+  "name": "aerosurfers-api",
+  "version": "1.0.0",
+  "description": "Azure Functions API for Aerosurfers contact form",
+  "main": "contact/index.js",
+  "scripts": {
+    "start": "func start"
+  },
+  "dependencies": {
+    "@azure/communication-email": "^1.0.0"
+  }
+}
